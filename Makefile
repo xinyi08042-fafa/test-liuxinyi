@@ -17,7 +17,7 @@ define Package/gl-mt6000-default-settings
 endef
 
 define Package/gl-mt6000-default-settings/description
-  This package provides default settings for GL.iNet MT6000 router.
+  This package sets default WiFi SSID to "gl-inet" and password for GL-MT6000.
 endef
 
 define Build/Configure
@@ -28,7 +28,7 @@ endef
 
 define Package/gl-mt6000-default-settings/install
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
-	$(INSTALL_BIN) ./files/set-default-setting.sh $(1)/etc/uci-defaults/99-gl-mt6000-defaults
+	$(INSTALL_BIN) ./files/set-default-settings.sh $(1)/etc/uci-defaults/99-gl-mt6000-defaults
 endef
 
 $(eval $(call BuildPackage,gl-mt6000-default-settings))
