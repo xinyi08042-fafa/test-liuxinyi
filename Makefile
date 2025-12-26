@@ -4,7 +4,7 @@ PKG_NAME:=gl-mt6000-default-settings
 PKG_VERSION:=1.0.0
 PKG_RELEASE:=1
 
-PKG_MAINTAINER:=Your Name <your.email@example.com>
+PKG_MAINTAINER:=xinyi08042-fafa<xinyi.liu@gl-inet.com>
 PKG_LICENSE:=MIT
 
 include $(INCLUDE_DIR)/package.mk
