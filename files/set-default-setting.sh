@@ -22,6 +22,9 @@ if [ -n "$PASS_HASH" ]; then
     # 提交更改
     uci commit system
     echo "Default password set to: goodlife"
+fi
 
 touch /etc/gl-defaults-applied
 echo "GL.iNet MT6000 default settings applied successfully"
+
+exit 0
